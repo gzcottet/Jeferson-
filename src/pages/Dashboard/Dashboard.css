@@ -1,0 +1,140 @@
+/* src/pages/Dashboard/Dashboard.css */
+
+.dashboard-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.resumo {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.resumo-item {
+  background-color: #f0f0f0;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-align: center;
+  width: 25%;
+}
+
+.resumo-item.saldo {
+  background-color: #d4edda;
+}
+
+.resumo-item h3 {
+  margin-bottom: 10px;
+  color: #4caf50;
+}
+
+.resumo-item p {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.formulario {
+  margin-bottom: 30px;
+}
+
+.formulario h2 {
+  margin-bottom: 15px;
+  color: #4caf50;
+}
+
+.formulario form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.formulario input,
+.formulario select {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 150px;
+}
+
+.formulario button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+  background-color: #45a049;
+}
+
+.lista-transacoes {
+  margin-bottom: 30px;
+}
+
+.lista-transacoes h2 {
+  margin-bottom: 15px;
+  color: #4caf50;
+}
+
+.lista-transacoes ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lista-transacoes li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.lista-transacoes li.receita {
+  border-left: 5px solid #4caf50;
+}
+
+.lista-transacoes li.despesa {
+  border-left: 5px solid #ff4d4d;
+}
+
+.lista-transacoes li span {
+  flex: 1;
+}
+
+.lista-transacoes li button {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.lista-transacoes li button:hover {
+  background-color: #e60000;
+}
+
+.grafico {
+  margin-bottom: 30px;
+}
+
+.grafico h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4caf50;
+}
+
+  

@@ -1,0 +1,60 @@
+/* src/pages/Home/Home.css */
+.home-container {
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência *
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+}
+
+.home-container h1 {
+  font-size: 3.6em;
+  margin-bottom: 30px;
+  color: #333; /* Cor do título destacada */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para destacar o texto */
+}
+
+.home-container p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  color: #333; /* Cor do texto */
+}
+
+.home-container a {
+  padding: 20px 25px; /* Ajuste no padding */
+  background-color: #4caf50; /* Cor do botão */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s; /* Transição suave */
+}
+
+.home-container a:hover {
+  background-color: #45a049; /* Cor do botão ao passar o mouse */
+  transform: scale(1.05); /* Efeito de crescimento ao passar o mouse */
+}
+.animated-icon {
+  width: 300px; /* Aumentando o tamanho do ícone */
+  animation: bounce 2s infinite; /* Animação de bounce */
+  position: fixed; /* Permite posicionar em relação à janela */
+  bottom: 100px; /* Distância da parte inferior */
+  right: 800px; /* Distância da direita */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-20px);
+  }
+  60% {
+      transform: translateY(-10px);
+  }
+}
+
+
+
+
+
+
