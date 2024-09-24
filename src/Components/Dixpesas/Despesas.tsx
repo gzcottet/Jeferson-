@@ -1,43 +1,47 @@
-// src/components/Despesas/Despesas.tsx
 import React, { useContext, useState } from 'react';
-import { FinanceContext } from '../../context/FinanceContext'; 
+import { FinanceContext } from '../../context/FinanceContext';
 import './Despesas.css';
 
 const Despesas: React.FC = () => {
   const financeContext = useContext(FinanceContext);
-  const [valor, setValor] = useState<number | ''>(''); 
-  const [detalhe, setDetalhe] = useState(''); 
+  const [valor, setValor] = useState<string>(''); // Mudar para string
+  const [detalhe, setDetalhe] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault(); 
-    if (valor && detalhe && financeContext) {
-      financeContext.addDespesa({ valor: Number(valor), detalhe }); 
-      setValor(''); 
-      setDetalhe(''); 
+    e.preventDefault();
+    const valorNumber = Number(valor); // Converter o valor apenas no momento da submissão
+
+    if (valorNumber > 0 && detalhe && financeContext) {
+      financeContext.addDespesa({ valor: valorNumber, detalhe });
+      setValor('');
+      setDetalhe('');
     } else {
-      alert('Por favor, preencha todos os campos!'); 
+      alert('Por favor, preencha todos os campos corretamente!');
     }
   };
 
   return (
     <div className="despesas-container">
-      <h2>Adicionar Despesa</h2>
-      <form onSubmit={handleSubmit}>
-        <input 
-          type="number" 
+      <h2 className="titulo-despesas">Adicionar Despesas</h2>
+      <p className="descricao-despesas">Preencha os detalhes da despesa abaixo:</p>
+      <form className="form-despesas" onSubmit={handleSubmit}>
+        <label className="label-despesas">Valor da Despesa:</label>
+        <input
+          type="number"
+          className="input-despesas"
           value={valor}
-          onChange={(e) => setValor(Number(e.target.value))}
+          onChange={(e) => setValor(e.target.value)} // Armazenar como string
           placeholder="Valor da Despesa"
-          required
         />
-        <input 
-          type="text" 
+        <label className="label-despesas">Detalhe da Despesa:</label>
+        <input
+          type="text"
+          className="input-despesas"
           value={detalhe}
           onChange={(e) => setDetalhe(e.target.value)}
           placeholder="Detalhe da Despesa"
-          required
         />
-        <button type="submit">Adicionar</button>
+        <button type="submit" className="botao-despesas">Adicionar Despesa</button>
       </form>
     </div>
   );

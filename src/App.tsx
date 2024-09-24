@@ -1,15 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { FinanceProvider } from './context/FinanceProvider'; // Corrigido para FinanceProvider
+import { FinanceProvider } from './context/FinanceContext';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Home from './pages/Home/Home';
 import Sobre from './pages/Sobre/Sobre';
 import Login from './pages/Login/Login';
+import Despesas from './Components/Dixpesas/Despesas'; // Certifique-se de que está importando o componente correto
 import './App.css';
 
 const App: React.FC = () => {
   return (
-    <FinanceProvider> {/* Envolver a aplicação com o FinanceProvider */}
+    <FinanceProvider>
       <Router>
         <nav className="navbar">
           <h2 className="navbar-logo">Gerenciador de Orçamento</h2>
@@ -33,6 +34,7 @@ const App: React.FC = () => {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/despesas" element={<Despesas />} /> {/* Rota para a página de Despesas */}
         </Routes>
       </Router>
     </FinanceProvider>

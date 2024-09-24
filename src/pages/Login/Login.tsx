@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Certifique-se de que o React Router está importado
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate(); // Hook para redirecionamento
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
-    // Redireciona para a página de Despesas independentemente das credenciais
+    // Redireciona para a página de Despesas
     navigate('/despesas');
   };
 
