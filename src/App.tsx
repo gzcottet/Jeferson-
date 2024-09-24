@@ -5,7 +5,7 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import Home from './pages/Home/Home';
 import Sobre from './pages/Sobre/Sobre';
 import Login from './pages/Login/Login';
-import Despesas from './Components/Dixpesas/Despesas'; // Certifique-se de que está importando o componente correto
+import Despesas from './Components/Dixpesas/Despesas'; 
 import './App.css';
 
 const App: React.FC = () => {
@@ -34,7 +34,7 @@ const App: React.FC = () => {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/despesas" element={<Despesas />} /> {/* Rota para a página de Despesas */}
+          <Route path="/despesas" element={<Despesas />} /> {}
         </Routes>
       </Router>
     </FinanceProvider>

@@ -1,64 +1,64 @@
 .despesas-container {
-    background-color: #f8f9fa; /* Cor de fundo suave */
-    padding: 40px; /* Aumentando o padding */
-    border-radius: 15px; /* Bordas arredondadas */
-    width: 500px; /* Largura um pouco maior */
-    margin: auto; /* Centraliza o container */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    font-family: 'Arial', sans-serif; /* Mudando a fonte */
-    text-align: center; /* Centraliza o texto */
+    background-color: #f8f9fa; 
+    padding: 40px; 
+    border-radius: 15px; 
+    width: 500px; 
+    margin: auto; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    font-family: 'Arial', sans-serif; 
+    text-align: center; 
 }
 
 .titulo-despesas {
-    font-size: 2.5em; /* Aumentando o tamanho do título */
-    color: #343a40; /* Cor mais escura para o texto */
-    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-size: 2.5em; 
+    color: #343a40; 
+    margin-bottom: 20px; 
 }
 
 .descricao-despesas {
-    font-size: 1.1em; /* Tamanho da descrição */
-    color: #6c757d; /* Cor cinza */
-    margin-bottom: 30px; /* Espaço abaixo da descrição */
+    font-size: 1.1em; 
+    color: #6c757d; 
+    margin-bottom: 30px; 
 }
 
 .form-despesas {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza os itens do formulário */
+    align-items: center; 
 }
 
 .label-despesas {
-    font-size: 1em; /* Tamanho da fonte da label */
-    color: #495057; /* Cor da label */
-    margin-bottom: 5px; /* Espaço abaixo das labels */
+    font-size: 1em; 
+    color: #495057; 
+    margin-bottom: 5px; 
 }
 
 .input-despesas {
-    padding: 12px; /* Espaçamento interno */
-    margin-bottom: 15px; /* Espaço abaixo do input */
-    border: 1px solid #ced4da; /* Borda suave */
-    border-radius: 8px; /* Bordas arredondadas */
-    font-size: 1em; /* Tamanho da fonte do input */
-    width: 80%; /* Largura do input */
+    padding: 12px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ced4da; 
+    border-radius: 8px; 
+    font-size: 1em; 
+    width: 80%; 
 }
 
 .botao-despesas {
-    background-color: #28a745; /* Cor verde */
+    background-color: #28a745; 
     color: white;
-    padding: 15px 30px; /* Adicionando padding horizontal */
+    padding: 15px 30px; 
     border: none;
-    border-radius: 8px; /* Bordas mais arredondadas */
+    border-radius: 8px; 
     cursor: pointer;
-    font-size: 1.1em; /* Tamanho da fonte do botão */
-    transition: background-color 0.3s, transform 0.2s; /* Transição suave */
-    margin-top: 10px; /* Espaço acima do botão */
+    font-size: 1.1em; 
+    transition: background-color 0.3s, transform 0.2s; 
+    margin-top: 10px; 
 }
 
 .botao-despesas:hover {
-    background-color: #218838; /* Verde mais escuro ao passar o mouse */
-    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+    background-color: #218838; 
+    transform: translateY(-2px); 
 }
 
 .botao-despesas:active {
-    transform: translateY(0); /* Efeito de pressionar */
+    transform: translateY(0); 
 }

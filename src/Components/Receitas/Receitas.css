@@ -1,28 +1,26 @@
-/* src/pages/Receita/Receita.css */
 
 .nova-receita-container {
-    background-color: #e0e0e0; /* Cor de fundo cinza claro */
+    background-color: #e0e0e0; 
     padding: 30px;
     border-radius: 12px;
-    width: 450px; /* Aumentando a largura */
+    width: 450px; 
     margin: auto;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
-  }
-  
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
+}
   .titulo-receita {
-    font-size: 2.2em; /* Aumentando o tamanho do título */
-    color: #d84315; /* Laranja mais escuro */
+    font-size: 2.2em; 
+    color: #d84315; 
     text-align: center;
-    margin-bottom: 25px; /* Aumentando o espaçamento abaixo do título */
-    font-family: 'Georgia', serif; /* Mudando a fonte do título */
+    margin-bottom: 25px; 
+    font-family: 'Georgia', serif; 
   }
   
   .descricao-receita {
-    font-size: 1.4em; /* Aumentando o tamanho da descrição */
-    color: #6d4c41; /* Cor marrom escuro */
+    font-size: 1.4em; 
+    color: #6d4c41; 
     text-align: center;
-    margin-bottom: 25px; /* Aumentando o espaçamento abaixo da descrição */
-    font-family: 'Verdana', sans-serif; /* Mudando a fonte da descrição */
+    margin-bottom: 25px; 
+    font-family: 'Verdana', sans-serif; 
   }
   
   .form-receita {
@@ -31,33 +29,33 @@
   }
   
   .label-receita {
-    font-size: 1.2em; /* Aumentando o tamanho do texto das labels */
-    color: #d84315; /* Laranja escuro */
-    margin-bottom: 12px; /* Aumentando o espaçamento abaixo da label */
-    font-family: 'Arial', sans-serif; /* Mudando a fonte das labels */
+    font-size: 1.2em; 
+    color: #d84315; 
+    margin-bottom: 12px; 
+    font-family: 'Arial', sans-serif; 
   }
   
   .input-receita {
-    padding: 12px; /* Aumentando o padding */
-    margin-bottom: 24px; /* Aumentando o espaçamento abaixo do input */
-    border: 2px solid #d84315; /* Borda laranja escura mais grossa */
-    border-radius: 6px; /* Bordas mais arredondadas */
-    font-size: 1em; /* Tamanho da fonte para o input */
+    padding: 12px; 
+    margin-bottom: 24px; 
+    border: 2px solid #d84315; 
+    border-radius: 6px; 
+    font-size: 1em; 
   }
   
   .botao-receita {
-    background-color: #ff5722; /* Laranja vivo */
+    background-color: #ff5722; 
     color: white;
-    padding: 12px; /* Aumentando o padding do botão */
+    padding: 12px; 
     border: none;
-    border-radius: 6px; /* Bordas mais arredondadas */
+    border-radius: 6px; 
     cursor: pointer;
-    font-size: 1.2em; /* Aumentando o tamanho da fonte do botão */
-    transition: background-color 0.3s, transform 0.3s; /* Adicionando transição */
+    font-size: 1.2em; 
+    transition: background-color 0.3s, transform 0.3s;
   }
   
   .botao-receita:hover {
-    background-color: #e64a19; /* Laranja mais escuro para hover */
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    background-color: #e64a19; 
+    transform: scale(1.05); 
   }
   

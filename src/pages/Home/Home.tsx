@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 const Home: React.FC = () => {
   return (
     <div className="home-container">
-      <h1>Planejador Financeiro</h1> {/* Título alterado */}
+      <h1>Planejador Financeiro</h1> {}
       <p>
-        Gerencie suas finanças de forma simples e eficaz. {/* Texto centralizado e simplificado */}
+        Gerencie suas finanças de forma simples e eficaz. {}
       </p>
-      <Link to="/login">Começar Agora</Link> {/* Texto do botão alterado */}
+      <Link to="/login">Começar Agora</Link> {}
     </div>
   );
 };

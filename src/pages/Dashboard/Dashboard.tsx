@@ -1,25 +1,25 @@
 import React, { useContext } from 'react';
 import { FinanceContext } from '../../context/FinanceContext';
-import Grafico from '../../Components/Grafico/Grafico'; // Ajuste o caminho se necessário
+import Grafico from '../../Components/Grafico/Grafico'; 
 import './Dashboard.css';
 
 const Dashboard: React.FC = () => {
   const context = useContext(FinanceContext);
 
   if (!context) {
-    return <div>Loading...</div>; // Adicionando uma verificação de carregamento
+    return <div>Loading...</div>; 
   }
 
   const { totalReceitas, totalDespesas, saldo } = context;
 
-  // Exemplo de dados para o gráfico
+  
   const data = {
     labels: ['Receitas', 'Despesas'],
     datasets: [
       {
         label: 'Valores',
         data: [totalReceitas, totalDespesas],
-        backgroundColor: ['#42A5F5', '#EF5350'], // Cores para o gráfico
+        backgroundColor: ['#42A5F5', '#EF5350'], 
       },
     ],
   };
@@ -41,7 +41,7 @@ const Dashboard: React.FC = () => {
           <p className="valor-dashboard">R$ {saldo.toFixed(2)}</p>
         </div>
       </div>
-      <Grafico data={data} /> {/* Passando os dados para o gráfico */}
+      <Grafico data={data} /> {}
     </div>
   );
 };

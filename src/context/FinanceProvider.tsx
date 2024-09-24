@@ -22,7 +22,6 @@ export const FinanceProvider: React.FC<{ children: React.ReactNode }> = ({ child
     setReceitas([...receitas, receita]);
   };
 
-  // Calcular totais
   const totalReceitas = receitas.reduce((total, receita) => total + receita.valor, 0);
   const totalDespesas = despesas.reduce((total, despesa) => total + despesa.valor, 0);
   const saldo = totalReceitas - totalDespesas;

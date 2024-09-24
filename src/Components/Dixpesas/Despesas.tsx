@@ -4,12 +4,12 @@ import './Despesas.css';
 
 const Despesas: React.FC = () => {
   const financeContext = useContext(FinanceContext);
-  const [valor, setValor] = useState<string>(''); // Mudar para string
+  const [valor, setValor] = useState<string>(''); 
   const [detalhe, setDetalhe] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const valorNumber = Number(valor); // Converter o valor apenas no momento da submissão
+    const valorNumber = Number(valor); 
 
     if (valorNumber > 0 && detalhe && financeContext) {
       financeContext.addDespesa({ valor: valorNumber, detalhe });
@@ -30,7 +30,7 @@ const Despesas: React.FC = () => {
           type="number"
           className="input-despesas"
           value={valor}
-          onChange={(e) => setValor(e.target.value)} // Armazenar como string
+          onChange={(e) => setValor(e.target.value)} 
           placeholder="Valor da Despesa"
         />
         <label className="label-despesas">Detalhe da Despesa:</label>
