@@ -1,0 +1,63 @@
+.despesas-container {
+    background-color: #f8f9fa; /* Cor de fundo suave */
+    padding: 40px; /* Aumentando o padding */
+    border-radius: 15px; /* Bordas arredondadas */
+    width: 500px; /* Largura um pouco maior */
+    margin: auto; /* Centraliza o container */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    font-family: 'Arial', sans-serif; /* Mudando a fonte */
+}
+
+.titulo-despesas {
+    font-size: 2.5em; /* Aumentando o tamanho do título */
+    color: #343a40; /* Cor mais escura para o texto */
+    text-align: center;
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.descricao-despesas {
+    font-size: 1.1em; /* Tamanho da descrição */
+    color: #6c757d; /* Cor cinza */
+    text-align: center;
+    margin-bottom: 30px; /* Espaço abaixo da descrição */
+}
+
+.form-despesas {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-despesas {
+    font-size: 1em; /* Tamanho da fonte da label */
+    color: #495057; /* Cor da label */
+    margin-bottom: 5px; /* Espaço abaixo das labels */
+}
+
+.input-despesas {
+    padding: 12px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaço abaixo do input */
+    border: 1px solid #ced4da; /* Borda suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 1em; /* Tamanho da fonte do input */
+}
+
+.botao-despesas {
+    background-color: #28a745; /* Cor verde */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px; /* Bordas mais arredondadas */
+    cursor: pointer;
+    font-size: 1.1em; /* Tamanho da fonte do botão */
+    transition: background-color 0.3s, transform 0.2s; /* Transição suave */
+    margin-top: 10px; /* Espaço acima do botão */
+}
+
+.botao-despesas:hover {
+    background-color: #218838; /* Verde mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+.botao-despesas:active {
+    transform: translateY(0); /* Efeito de pressionar */
+}

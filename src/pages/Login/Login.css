@@ -1,53 +1,52 @@
 /* src/pages/Login/Login.css */
-
 body {
-    margin: 0; /* Remove margens padrão */
-    font-family: 'Arial', sans-serif; /* Fonte padrão */
-    background-color: #f0f8ff; /* Fundo claro para a página */
-  }
-  
-  .login-container {
-    display: flex; /* Usar flexbox para centralizar */
-    flex-direction: column; /* Colocar elementos em coluna */
-    align-items: center; /* Centraliza horizontalmente */
-    padding: 40px; /* Espaçamento interno */
-    margin-top: 100px; /* Margem superior para afastar do topo */
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
-  }
-  
-  .login-container h1 {
-    font-size: 2.5em; /* Aumenta o tamanho do título */
-    margin-bottom: 30px; /* Espaçamento abaixo do título */
-    color: #4caf50; /* Cor do título */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para destacar o texto */
-  }
-  
-  .login-container input {
-    width: 100%; /* Largura total */
-    max-width: 475px; /* Largura máxima dos inputs */
-    padding: 12px; /* Espaçamento interno */
-    margin: 10px 0; /* Espaçamento vertical entre inputs */
-    border: 1px solid #ccc; /* Borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    font-size: 1em; /* Tamanho da fonte */
-  }
-  
-  .login-container button {
-    width: 100%; /* Largura total */
-    max-width: 500px; /* Largura máxima do botão */
-    padding: 12px; /* Espaçamento interno */
-    background-color: #4caf50; /* Cor do botão */
-    color: white; /* Cor do texto do botão */
-    border: none; /* Remove borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Muda o cursor para pointer */
-    font-size: 1em; /* Tamanho da fonte do botão */
-    transition: background-color 0.3s; /* Transição suave */
-  }
-  
-  .login-container button:hover {
-    background-color: #45a049; /* Cor do botão ao passar o mouse */
-  }
-  
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #2c3e50; /* Fundo azul escuro */
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Para empilhar a navbar e o container de login */
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px; /* Aumentando o espaçamento interno */
+  background-color: rgba(255, 255, 255, 0.95); /* Fundo branco com leve transparência */
+  border-radius: 20px; /* Bordas mais arredondadas */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* Sombra mais intensa para profundidade */
+  width: 400px; /* Largura do container de login */
+  margin: 0 auto; /* Centraliza o container */
+}
+
+.login-container h1 {
+  font-size: 2.5em; /* Tamanho do título */
+  margin-bottom: 30px; /* Espaço abaixo do título */
+  color: #2c3e50;
+}
+
+.login-container input {
+  width: 100%; /* Largura total */
+  padding: 15px; /* Espaçamento interno */
+  margin: 15px 0; /* Espaçamento vertical entre inputs */
+  border: 1px solid #bdc3c7; /* Borda mais escura */
+  border-radius: 10px; /* Bordas arredondadas */
+  font-size: 1.2em; /* Tamanho da fonte */
+}
+
+.login-container button {
+  width: 100%; /* Largura total */
+  padding: 15px; /* Espaçamento interno */
+  background-color: #9b59b6; /* Cor roxo claro para o botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Remove borda */
+  border-radius: 10px; /* Bordas arredondadas */
+  cursor: pointer; /* Muda o cursor para pointer */
+  font-size: 1.2em; /* Tamanho da fonte do botão */
+  transition: background-color 0.3s; /* Transição suave */
+}
+
+.login-container button:hover {
+  background-color: #8e44ad; /* Cor roxa mais escura ao passar o mouse */
+}

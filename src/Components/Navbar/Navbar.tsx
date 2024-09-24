@@ -1,25 +1,15 @@
-// src/components/Navbar/Navbar.tsx
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
-      <h2 className="navbar-logo">Gerenciador de Orçamento</h2>
+      <h1 className="navbar-logo">Gerenciador de Orçamento</h1>
       <ul className="navbar-links">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/dashboard">Dashboard</Link>
-        </li>
-        <li>
-          <Link to="/sobre">Sobre</Link>
-        </li>
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/sobre">Sobre</a></li>
+        <li><a href="/login">Login</a></li>
       </ul>
     </nav>
   );

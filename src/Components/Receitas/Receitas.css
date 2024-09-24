@@ -1,0 +1,63 @@
+/* src/pages/Receita/Receita.css */
+
+.nova-receita-container {
+    background-color: #e0e0e0; /* Cor de fundo cinza claro */
+    padding: 30px;
+    border-radius: 12px;
+    width: 450px; /* Aumentando a largura */
+    margin: auto;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+  }
+  
+  .titulo-receita {
+    font-size: 2.2em; /* Aumentando o tamanho do título */
+    color: #d84315; /* Laranja mais escuro */
+    text-align: center;
+    margin-bottom: 25px; /* Aumentando o espaçamento abaixo do título */
+    font-family: 'Georgia', serif; /* Mudando a fonte do título */
+  }
+  
+  .descricao-receita {
+    font-size: 1.4em; /* Aumentando o tamanho da descrição */
+    color: #6d4c41; /* Cor marrom escuro */
+    text-align: center;
+    margin-bottom: 25px; /* Aumentando o espaçamento abaixo da descrição */
+    font-family: 'Verdana', sans-serif; /* Mudando a fonte da descrição */
+  }
+  
+  .form-receita {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label-receita {
+    font-size: 1.2em; /* Aumentando o tamanho do texto das labels */
+    color: #d84315; /* Laranja escuro */
+    margin-bottom: 12px; /* Aumentando o espaçamento abaixo da label */
+    font-family: 'Arial', sans-serif; /* Mudando a fonte das labels */
+  }
+  
+  .input-receita {
+    padding: 12px; /* Aumentando o padding */
+    margin-bottom: 24px; /* Aumentando o espaçamento abaixo do input */
+    border: 2px solid #d84315; /* Borda laranja escura mais grossa */
+    border-radius: 6px; /* Bordas mais arredondadas */
+    font-size: 1em; /* Tamanho da fonte para o input */
+  }
+  
+  .botao-receita {
+    background-color: #ff5722; /* Laranja vivo */
+    color: white;
+    padding: 12px; /* Aumentando o padding do botão */
+    border: none;
+    border-radius: 6px; /* Bordas mais arredondadas */
+    cursor: pointer;
+    font-size: 1.2em; /* Aumentando o tamanho da fonte do botão */
+    transition: background-color 0.3s, transform 0.3s; /* Adicionando transição */
+  }
+  
+  .botao-receita:hover {
+    background-color: #e64a19; /* Laranja mais escuro para hover */
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+  }
+  

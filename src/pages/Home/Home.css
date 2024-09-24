@@ -1,60 +1,41 @@
-/* src/pages/Home/Home.css */
 .home-container {
   text-align: center;
-  padding: 50px;
-  background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência *
-  border-radius: 10px; /* Bordas arredondadas */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+  padding: 40px; /* Reduzindo o padding para um espaço mais contido */
+  background-color: rgba(240, 240, 240, 0.95); /* Fundo claro com leve transparência */
+  border-radius: 20px; /* Bordas arredondadas */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra mais suave para um efeito leve */
+  min-height: 100vh; /* Ocupa toda a altura da tela */
+  display: flex; /* Usando flexbox para centralizar o conteúdo */
+  flex-direction: column; /* Coloca os itens em coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
 }
 
 .home-container h1 {
-  font-size: 3.6em;
-  margin-bottom: 30px;
-  color: #333; /* Cor do título destacada */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para destacar o texto */
+  font-size: 2.5em; /* Tamanho do título reduzido */
+  margin-bottom: 20px; /* Espaço abaixo do título */
+  color: #2c3e50; /* Cor do título mais escura */
+  font-family: 'Arial', sans-serif; /* Fonte do título */
 }
 
 .home-container p {
-  font-size: 1.5em;
-  margin-bottom: 30px;
-  color: #333; /* Cor do texto */
+  font-size: 1.2em; /* Tamanho do texto reduzido */
+  margin-bottom: 30px; /* Espaço abaixo do texto */
+  color: #34495e; /* Cor do texto mais escura */
+  font-family: 'Arial', sans-serif; /* Fonte do texto */
 }
 
 .home-container a {
-  padding: 20px 25px; /* Ajuste no padding */
-  background-color: #4caf50; /* Cor do botão */
-  color: white;
+  padding: 10px 25px; /* Ajustando o padding do botão */
+  background-color: #3498db; /* Azul claro para o botão */
+  color: #ffffff; /* Branco */
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 10px; /* Bordas arredondadas */
   transition: background-color 0.3s, transform 0.2s; /* Transição suave */
+  font-weight: bold; /* Texto em negrito */
 }
 
 .home-container a:hover {
-  background-color: #45a049; /* Cor do botão ao passar o mouse */
-  transform: scale(1.05); /* Efeito de crescimento ao passar o mouse */
+  background-color: #2980b9; /* Azul mais escuro ao passar o mouse */
+  transform: scale(1.05); /* Efeito de leve crescimento ao passar o mouse */
 }
-.animated-icon {
-  width: 300px; /* Aumentando o tamanho do ícone */
-  animation: bounce 2s infinite; /* Animação de bounce */
-  position: fixed; /* Permite posicionar em relação à janela */
-  bottom: 100px; /* Distância da parte inferior */
-  right: 800px; /* Distância da direita */
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-  }
-  40% {
-      transform: translateY(-20px);
-  }
-  60% {
-      transform: translateY(-10px);
-  }
-}
-
-
-
-
-
-

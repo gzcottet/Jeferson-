@@ -17,7 +17,7 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #4caf50;
+  background-color: #838883;
   padding: 10px 20px;
   color: white;
 }
@@ -36,7 +36,7 @@ s
 }
 
 .navbar-links li a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 1em;
   transition: color 0.3s;

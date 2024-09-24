@@ -1,41 +1,78 @@
 /* src/pages/Sobre/Sobre.css */
 
+body {
+  margin: 0; /* Remover margens do body */
+  padding: 0; /* Remover padding do body */
+  height: 100vh; /* Definir altura total da tela */
+  background-color: #e1f5fe; /* Fundo azul claro */
+}
+
 .sobre-container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .sobre-container h1 {
-    text-align: center;
-    color: #4caf50;
-    margin-bottom: 20px;
-  }
-  
-  .sobre-container h2 {
-    color: #4caf50;
-    margin-top: 20px;
-  }
-  
-  .sobre-container p {
-    margin-bottom: 15px;
-  }
-  
-  .sobre-container ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .sobre-container li {
-    background-color: #e0ffe0;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 4px;
-  }
-  
+  position: absolute; /* Usando position absolute para posicionar os containers */
+  width: 40%; /* Largura dos containers */
+  padding: 30px; /* Ajustando o padding */
+  font-family: 'Arial', sans-serif; /* Mudando a fonte padrão */
+  line-height: 1.8; /* Aumentando o espaçamento entre linhas */
+  color: #444; /* Cor do texto levemente mais escura */
+  background-color: #f8f8f8; /* Fundo levemente cinza */
+  border-radius: 10px; /* Bordas mais arredondadas */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra menos intensa */
+}
+
+.sobre-container.top-left {
+  top: 100px; /* Distância do topo (ajustado para ficar abaixo da navbar) */
+  left: 20px; /* Distância da esquerda */
+}
+
+.sobre-container.top-right {
+  top: 100px; /* Distância do topo (ajustado para ficar abaixo da navbar) */
+  right: 20px; /* Distância da direita */
+}
+
+.sobre-container.bottom-left {
+  bottom: 20px; /* Distância da parte inferior */
+  left: 20px; /* Distância da esquerda */
+}
+
+.sobre-container.bottom-right {
+  bottom: 20px; /* Distância da parte inferior */
+  right: 20px; /* Distância da direita */
+}
+
+.sobre-container h1 {
+  text-align: left; /* Alinhando o título à esquerda */
+  color: #000; /* Preto para o título */
+  margin-bottom: 20px; /* Ajustando o espaço abaixo do título */
+  font-size: 2em; /* Diminuindo o tamanho da fonte do título */
+  text-shadow: none; /* Removendo a sombra do título */
+}
+
+.sobre-container h2 {
+  color: #000; /* Preto para subtítulos */
+  margin-top: 20px; /* Ajustando a margem superior */
+  font-size: 1.5em; /* Diminuindo o tamanho da fonte dos subtítulos */
+}
+
+.sobre-container p {
+  margin-bottom: 20px; /* Ajustando o espaço abaixo dos parágrafos */
+  font-size: 1.1em; /* Diminuindo o tamanho da fonte dos parágrafos */
+  text-align: justify; /* Justificando o texto dos parágrafos */
+}
+
+.sobre-container ul {
+  list-style-type: square; /* Alterando o estilo da lista */
+  padding: 0;
+}
+
+.sobre-container li {
+  background-color: #e1f5fe; /* Azul claro como fundo padrão */
+  margin-bottom: 15px; /* Ajustando o espaço entre os itens da lista */
+  padding: 10px; /* Ajustando o padding */
+  border-radius: 6px; /* Bordas arredondadas */
+  font-size: 1.1em; /* Diminuindo o tamanho da fonte dos itens da lista */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.sobre-container li:hover {
+  background-color: #b3e5fc; /* Azul ainda mais claro ao passar o mouse sobre os itens */
+}
